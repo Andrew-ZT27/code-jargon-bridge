@@ -1,5 +1,5 @@
 # Code Jargon Bridge
-
+让 AI 在讲编程术语、Git 操作、报错、部署和工程黑话时，顺手补一句中文大白话解释，帮助非技术用户也能看懂并参与做网站、工具和 app。
 Make AI explain coding jargon in plain Chinese so non-technical users can understand while building apps and websites.
 
 ## What It Does
