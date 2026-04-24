@@ -1,5 +1,7 @@
 # Code Jargon Bridge
+
 让 AI 在讲编程术语、Git 操作、报错、部署和工程黑话时，顺手补一句中文大白话解释，帮助非技术用户也能看懂并参与做网站、工具和 app。
+
 Make AI explain coding jargon in plain Chinese so non-technical users can understand while building apps and websites.
 
 ## What It Does
@@ -97,6 +99,62 @@ Use:
 ```text
 我会先 refactor（不改功能，只整理代码结构）上传流程，再加一个 retry mechanism（失败后自动重试的机制），最后先 deploy 到 staging（先发布到正式上线前的预演环境）。
 ```
+
+## Before vs After
+
+### 1. Git collaboration
+
+Without the skill:
+
+```text
+你先 commit，然后从 main rebase 一下，处理完 conflict 再 push。
+```
+
+With the skill:
+
+```text
+你先 commit（先把这次修改保存成一个版本点），然后从 main rebase 一下（把你的修改重新整理到最新主线上），处理完 conflict（两边改了同一个地方，Git 不知道该听谁的冲突）再 push（把本地代码传到远程仓库）。
+```
+
+Why it helps:
+
+The sentence stays technically correct, but non-technical users can immediately follow it.
+
+### 2. Debugging an error
+
+Without the skill:
+
+```text
+这个报错像是 null reference，先看 stack trace，再排查是不是异步请求时序有问题。
+```
+
+With the skill:
+
+```text
+这个报错像是 null reference（本来该有值，但实际拿到的是空的），先看 stack trace（报错是沿着哪条调用路径冒出来的），再排查是不是异步请求时序有问题（请求返回的先后顺序乱了）。
+```
+
+Why it helps:
+
+The error stops sounding like pure engineering jargon, so the user can understand what is actually going wrong.
+
+### 3. Product-building discussion
+
+Without the skill:
+
+```text
+第一版先做 MVP，后面再补 auth、queue 和 rate limit。
+```
+
+With the skill:
+
+```text
+第一版先做 MVP（先做一个最小可用版本，能跑起来最重要），后面再补 auth（登录鉴权，确认用户身份）、queue（任务排队处理，避免同时太多请求把服务挤爆）和 rate limit（限制请求频率，防止接口被刷爆）。
+```
+
+Why it helps:
+
+This is especially useful for UI designers, PMs, founders, and other non-technical builders who can drive products but do not speak fluent engineering jargon.
 
 ## Why This Exists
 
