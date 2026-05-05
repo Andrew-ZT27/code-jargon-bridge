@@ -1,4 +1,4 @@
 interface:
   display_name: "Code Jargon Bridge"
-  short_description: "用中文大白话补充解释编程术语、命令、报错和工程行话"
-  default_prompt: "Use $code-jargon-bridge to explain coding jargon in plain Chinese while collaborating with a beginner user."
+  short_description: "让非程序员在 vibe coding 时看懂行动、风险、影响和下一步"
+  default_prompt: "Use $code-jargon-bridge while coding with me. Explain actions, risks, user impact, next steps, and necessary jargon in plain Chinese."
